@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<% for(let i=0; i<bloginfo.length; i++) { %>
+
+  <h1><%=bloginfo[i].title%></h1>
+  <p><%=bloginfo[i].blog.substring(0,99)%></p>
+  <a href="/posts/<%=bloginfo[i].title%>" >click here</a>
+<%}%>
+<%- include("partials/footer") %>
+
+
+
+<%#we have the array bloginfo: [{title: , blog : }] %>

@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+<div class="container">
+  <h1>Compose</h1>
+  <form autocomplete="off" class="la" action="/components" method="POST">
+    <div class="container">
+      <label class="lbel" for="titleblog">Title</label> <br>
+      <input class="in1" type="textarea" name="titleblog" placeholder="start writing your own blog"> <br>
+      <label class="lbel" for="blog">write.......</label> <br>
+      <textarea class="in2" type="textarea" rows="50" cols="50" name="blog" placeholder="start writing your own blog"></textarea> <br>
+      <button class="btn btn-md btn-primary btn-outline-info" type="submit" name="button">+</button> <br>
+    </div>
+  </form>
+</div>
+<%# include("partials/footer") %>
